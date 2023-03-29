@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Студенты</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./index.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <form action="" class="search-form">
+            <input type="text" name="" id="" class="search-form__input" placeholder="Введите значение">
+        </form>
+        <button class="btn btn-add-form-open">Добавить студента</button>
+        <form action="" method="POST" class="add-form">
+            <img src="./img/header/close.svg" alt="" class="add-form__close-icon">
+            <!-- для ФИО -->
+            <label class="add-form__label">
+                Введите ФИО:
+                <input type="text" class="add-form__input" name="FIO" required>
+            </label>
+            <!-- дата рождения -->
+            <label class="add-form__label">
+                Дата рождения:
+                <input type="date" class="add-form__input" name="birthday" required>
+            </label>
+            <!-- год начала обучения -->
+            <label class="add-form__label">
+                Год обучения:
+                <input type="number" min="2000" max="2023" class="add-form__input" name="yearStudy" required>
+            </label>
+            <!-- факультет -->
+            <label class="add-form__label">
+                Факультет:
+                <input type="text" class="add-form__input" name="facultet" required>
+            </label>
+            <button type="submit" class="btn add-form__button" disabled>Добавить студента</button>
+        </form>
+    </header>
+    <div id="table__container" class="table__container"></div>
+</body>
+
+</html>
